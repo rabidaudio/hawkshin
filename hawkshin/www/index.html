@@ -27,16 +27,26 @@
     </head>
     <body>
         <div class="app">
+            <div data-role="page">
+
+                <div data-role="header">
+                    <h1>Hawkshin</h1>
+                </div><!-- /header -->
+
+                <div data-role="content">	
+                 <p><a href="slidejs.html">swipe</a></p>	
+                 <p class="event listening">Connecting to Device</p>
+                 <p class="event received">Device is Ready</p>	
+                </div><!-- /content -->
+            </div><!-- /page -->
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-                <p><a href="slidejs.html">slide</a></p>
             </div>
         </div>
+        <script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="ls-store.js"></script>
-        <script type="text/javascript" src="slide.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
