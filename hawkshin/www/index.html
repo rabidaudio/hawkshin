@@ -60,7 +60,13 @@
          app_id: "aW4OwozRnaufzMCDKtucQabOkzeWxyu277uHd8uc",
          rest_key: "sN1IQF9P5Tz2ScW8E9vieoGJJvjHC9mJkgY4vQzY"
       });
-      var value = window.localStorage.getItem("userId");
+      var userid = window.localStorage.getItem("userId");
+      //prevent scrolling
+      window.addEventListener('load', function() {
+        document.body.addEventListener('touchmove', function(e) {
+          e.preventDefault();
+        }, false);
+      }, false);
       app.initialize();
       console.log("initalzied");
     </script>
