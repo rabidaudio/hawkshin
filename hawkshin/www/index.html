@@ -50,11 +50,17 @@
     <script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
     <script type="text/javascript" src="lib/jquery.parse.js"></script>
-    <script type="text/javascript" src="phonegap.js"></script>
-    <script type="text/javascript" src="ls-store.js"></script>
+    <!--<script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="ls-store.js"></script><!---->
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
+      $.parse.init({
+         app_id: "aW4OwozRnaufzMCDKtucQabOkzeWxyu277uHd8uc",
+         rest_key: "sN1IQF9P5Tz2ScW8E9vieoGJJvjHC9mJkgY4vQzY"
+      });
+      var value = window.localStorage.getItem("userId");
       app.initialize();
+      console.log("initalzied");
     </script>
   </body>
 </html>
