@@ -2,10 +2,10 @@
 <widget id="com.hawkshin.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>HawkShin</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        erectin a description
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="support@hawkshin.com" href="http://hawkshin.com">
+        The Hawkshin Team
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
