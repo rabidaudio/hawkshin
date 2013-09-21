@@ -28,12 +28,32 @@ var app = {
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
+    //prevent scrolling
+    document.body.addEventListener('touchmove', function(event) {
+        event.preventDefault();
+    }, false);
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+    },
+    //fancy code to use push notifications for alert() calls
+    showAlert: function (message, title) {
+        if (navigator.notification) {
+            navigator.notification.alert(message, null, title, 'OK');
+        } else {
+            alert(title ? (title + ": " + message) : message);
+        }
+    },
+    //test code for alerts() business
+    initialize: function() {
+        var self = this;
+        this.store = new MemoryStore(function() {
+            self.showAlert('Store Initialized', 'Info');
+        });
+        $('.search-key').on('keyup', $.proxy(this.findByName, this));
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
