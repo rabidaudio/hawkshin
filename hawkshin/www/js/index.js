@@ -29,9 +29,9 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     //prevent scrolling
-    document.body.addEventListener('touchmove', function(event) {
-            event.preventDefault();
-    }, false);
+    //document.body.addEventListener('touchmove', function(event) {
+    //        event.preventDefault();
+    //}, false);
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
@@ -65,5 +65,26 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+    loadPage: function(pid){
+        var userid = "" ;//TODO;
+        var result ={};
+        $.parse.post('function/nextproduct',{userId: userid }, function(json){
+            console.log(json);
+            result = JSON.parse(json);
+            if(result.error){
+                //TODO handle it
+            }else{
+                //TODO update page
+                //$("#"+pid) -> <img> to point to url
+                //      ->price inside bid
+                //          -> name below? picture
+            }
+        });
+    },
+    login: function(){
+        //get data from form
+        //submit to parse
+        //get back login, if true, store userid and fuck some bitches. i mean start the app
     }
 };
