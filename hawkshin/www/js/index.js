@@ -30,7 +30,7 @@ var app = {
     },
     //prevent scrolling
     document.body.addEventListener('touchmove', function(event) {
-        event.preventDefault();
+            event.preventDefault();
     }, false);
     // deviceready Event Handler
     //
