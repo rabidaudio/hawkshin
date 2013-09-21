@@ -86,5 +86,9 @@ var app = {
         //get data from form
         //submit to parse
         //get back login, if true, store userid and fuck some bitches. i mean start the app
-    }
+    },
 };
+
+$(document).on("timeIsUp", function() {
+    alert("time is up, yo");
+});
