@@ -12,3 +12,9 @@ $( document ).on( "pageinit", "#A", function() {
         }
     });
 });
+
+function login(){
+    alert("loging in");
+    $.mobile.changePage( "#A", {  allowSamePageTransition: true });
+    navigator.notification.vibrate(700); //phonegap vibrate
+}

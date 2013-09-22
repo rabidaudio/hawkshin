@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.custom.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/hawk.css" />
+	<link rel="stylesheet" href="css">
+	<script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+	<script src="lib/jquery.mobile-1.3.2.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.parse.js"></script>
+	<script type="text/javascript" src="processing-1.4.1.min.js"></script>
+	<script src="js/pages.js"></script>
+	<title>Hawkshin</title>
+</head>
+<body>
+
+<div id="login" data-url="login" data-role="page" data-theme="b">
+<div data-role="header" data-theme="b">
+<h1>Hawkshin!</h1>
+</div>
+
+<div data-role="content">
+<span class="logo"><p><img src="images/hawkshin.png" width="200px" alt="logo"></p><p>Dude, you need to log in!</p></span>
+<div data-role="fieldcontain" class="logo">
+<label for="txt_tw10">Email address</label>
+<textarea name="" id="txt_tw10" rows="" cols=""></textarea>
+</div>
+<input type="button" value="Login" onClick="login()"/>
+
+</div></div>
+
+<div id="A" data-url="Item 1" data-role="page">
+<div data-role="header">
+<h1>Chess Piece</h1>
+</div>
+
+<div data-role="content">
+<canvas id="tCanvas"></canvas>
+<br><img  src="http://s3.amazonaws.com/slate-slideshow-prod/images%2Fslides%2Fking_copy.jpg" title="Viking chess piece" alt="Viking chess piece" style="width: 300px; height: 225px;"><br>Here is some weird viking chess pieces. Hand carved? Totally badass.<br><br><br><br>
+<input type="submit" data-icon="check" value="Button"/>
+
+</div></div>
+<script type="text/javascript" src="js/phonegap.js"></script>
+<script type="text/javascript" src="js/timer.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+  var canvas = $('#tCanvas');
+  var processingInstance = new Processing(canvas[0], sketchProc);
+  $.parse.init({
+     app_id: "aW4OwozRnaufzMCDKtucQabOkzeWxyu277uHd8uc",
+     rest_key: "sN1IQF9P5Tz2ScW8E9vieoGJJvjHC9mJkgY4vQzY"
+  });
+  var userid = window.localStorage.getItem("userId");
+  //prevent scrolling
+  /*window.addEventListener('load', function() {
+    document.body.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+    }, false);
+  }, false);*/
+  app.initialize();
+  console.log("initalzied");
+</script>
+</body>
+</html>

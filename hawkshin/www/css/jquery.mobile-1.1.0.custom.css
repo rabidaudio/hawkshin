@@ -1,0 +1,80 @@
+/*!
+* jQuery Mobile Framework
+* Copyright (c) jQuery Project
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+* http://jquery.org/license
+*/
+
+/* 
+ * Custom generated themes for jQuery Mobile
+ */
+/* f
+-----------------------------------------------------------------------------------------------------------*/
+
+.ui-bar-f {
+	border: 1px solid 		transparent;
+	background: 			#5A5A5A;
+}
+.ui-bar-f, 
+.ui-bar-f input, 
+.ui-bar-f select, 
+.ui-bar-f textarea, 
+.ui-bar-f button {
+	font-family: Helvetica, Arial, sans-serif;
+}
+.ui-bar-f .ui-link {
+	font-weight: bold;
+}
+.ui-body-f,
+.ui-overlay-f {
+	background: 			#E1E1E1;
+	color: 					#4B1700;
+}
+.ui-overlay-f {
+	background-image: none;
+	border-width: 0;
+}
+.ui-body-f,
+.ui-body-f input,
+.ui-body-f select,
+.ui-body-f textarea,
+.ui-body-f button {
+	font-family: Helvetica, Arial, sans-serif;
+}
+.ui-body-f .ui-link-inherit {
+	color: 					#4B1700;
+}
+.ui-body-f .ui-link {
+	color: 					#2489CE;
+	font-weight: bold;
+}
+.ui-btn-up-f {
+	border: 1px solid 		#1E1815;
+	background: 			#761F00;
+	color: 					#FFFFFF;
+}
+.ui-btn-up-f a.ui-link-inherit {
+	color: 					#FFFFFF;
+}
+.ui-btn-hover-f {
+	border: 1px solid 		#4B4543;
+	background: 			#A52C00;
+	color: 					#D8D8D8;
+}
+.ui-btn-hover-f a.ui-link-inherit {
+	color: 					#D8D8D8;
+}
+.ui-btn-down-f {
+	border: 1px solid 		#4B4543;
+	background: 			#A52C00;
+	color: 					#FFFFFF;
+}
+.ui-btn-down-f a.ui-link-inherit {
+	color: 					#FFFFFF;
+}
+.ui-btn-up-f,
+.ui-btn-hover-f,
+.ui-btn-down-f {
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}

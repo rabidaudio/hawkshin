@@ -4,7 +4,12 @@ text-align:center;
 div.all{
 background-color: #CCC;
 }
-
+.logo{
+text-align:center;
+}
+img{
+border:1em;
+}
 
 
 
