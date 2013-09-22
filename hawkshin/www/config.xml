@@ -29,9 +29,9 @@
     <feature name="Notification">
       <param name="ios-package" value="CDVNotification" />
     </feature>
-    <feature name="SplashScreen">
+    <!--<feature name="SplashScreen">
       <param name="ios-package" value="CDVSplashScreen" />
-    </feature>
+    </feature>-->
 
     <icon gap:density="ldpi" gap:platform="android" src="res/icon/android/icon-36-ldpi.png" />
     <icon gap:density="mdpi" gap:platform="android" src="res/icon/android/icon-48-mdpi.png" />
