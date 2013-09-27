@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "hawkshin"
+        }, 
+        "hawkshin": {
+            "applicationId": "aW4OwozRnaufzMCDKtucQabOkzeWxyu277uHd8uc", 
+            "masterKey": "K6pZhVNJwfTRoXYJGKQio64uLqZUEBbiR1DmKqwL"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.12"
+    }
+}
